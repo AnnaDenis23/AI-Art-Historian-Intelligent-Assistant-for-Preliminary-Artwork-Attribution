@@ -45,22 +45,28 @@ Both approaches include confidence estimation and automatic flagging of cases re
 - **Embedding Storage**: NumPy arrays for efficient similarity search
 
 ## Project Structure
-ltair-case-art/
-├── app.py # Main Streamlit application
-├── config.py # Configuration (paths, thresholds, model settings)
-├── requirements.txt # Python dependencies
+altair-case-art/
+│
+├── app.py                              # Main Streamlit application
+├── config.py                           # Configuration (paths, thresholds, model settings)
+├── requirements.txt                    # Python dependencies
+│
 ├── components/
-│ └── attribution_card.py # UI component for displaying results
+│   └── attribution_card.py             # UI component for displaying results
+│
 ├── models/
-│ ├── clip_search.py # Similarity search implementation
-│ ── classifier.py # Zero-shot classification implementation
- ── utils/
-│ ├── preprocessing.py # Image preprocessing and CLIP integration
-│ ── confidence.py # Confidence scoring and expert flagging logic
-├── data/ # Reference artwork images
-└── files/ # Precomputed embeddings and metadata
-├── paintings_embeddings.npy
-└── russian_paintings_with_embeddings.csv
+│   ├── clip_search.py                  # Similarity search implementation
+│   └── classifier.py                   # Zero-shot classification implementation
+│
+├── utils/
+│   ├── preprocessing.py                # Image preprocessing and CLIP integration
+│   └── confidence.py                   # Confidence scoring and expert flagging logic
+│
+├── data/                               # Reference artwork images
+│
+└── files/                              # Precomputed embeddings and metadata
+    ├── paintings_embeddings.npy
+    └── russian_paintings_with_embeddings.csv
 
 
 
