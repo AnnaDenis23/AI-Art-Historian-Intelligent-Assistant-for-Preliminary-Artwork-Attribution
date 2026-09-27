@@ -54,7 +54,7 @@ ltair-case-art/
 ├── models/
 │ ├── clip_search.py # Similarity search implementation
 │ ── classifier.py # Zero-shot classification implementation
-── utils/
+ ── utils/
 │ ├── preprocessing.py # Image preprocessing and CLIP integration
 │ ── confidence.py # Confidence scoring and expert flagging logic
 ├── data/ # Reference artwork images
@@ -87,4 +87,4 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 pip install -r requirements.txt
 
-streamlit run app.py
+python3 -m streamlit run app.py
